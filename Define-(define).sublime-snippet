@@ -1,0 +1,14 @@
+<snippet>
+  <content><![CDATA[
+define(function(require){
+  var
+    ${1:dependency} = require('${2:path}')
+  ${3:,} ${4:module} = ${5:value}
+  ;
+
+  return ${6:module};
+});
+]]></content>
+  <tabTrigger>define</tabTrigger>
+  <scope>source.js</scope>
+</snippet>
