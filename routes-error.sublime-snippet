@@ -1,0 +1,7 @@
+<snippet>
+  <content><![CDATA[
+if (error) return res.json({ error: error, data: null }), logger.routes.error(TAGS, error);
+]]></content>
+  <tabTrigger>if (error)</tabTrigger>
+  <scope>source.js</scope>
+</snippet>
