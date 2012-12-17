@@ -1,0 +1,11 @@
+<snippet>
+  <content><![CDATA[
+client.query(query.text, query.values, function(error, result${1:s}){
+  if (error) return res.json({ error: error, data: null }), logger.routes.error(TAGS, error);
+
+  return res.json({ error: null, data: result.rows${2:[0]} });
+});
+]]></content>
+  <tabTrigger>client.query</tabTrigger>
+  <scope>source.js</scope>
+</snippet>
